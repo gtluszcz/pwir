@@ -1,0 +1,115 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.13.5
+A -fPIC
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lab2%b		lab2.adb		e8ab0276 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.direct_io%s
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.sequential_io%s
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+U lab2%s		lab2.ads		2b61f9dd EE NE OO PK IL
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-direio.ads		20180524051735 a93c9b31 ada.direct_io%s
+D a-direio.adb		20180524051734 dc70efaa ada.direct_io%b
+D a-except.ads		20180524051735 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051734 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180524051735 bb51c45a ada.numerics%s
+D a-nuflra.ads		20180524051734 4056ab7a ada.numerics.float_random%s
+D a-sequio.ads		20180524051735 3573d8ce ada.sequential_io%s
+D a-sequio.adb		20180524051736 93d6700a ada.sequential_io%b
+D a-stream.ads		20180524051735 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051736 491b781d ada.tags%s
+D a-textio.ads		20180524051736 881db35a ada.text_io%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051734 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051734 e53d8b8e interfaces.c_streams%s
+D lab2.ads		20181022170601 2b61f9dd lab2%s
+D lab2.adb		20181022170620 97cea074 lab2%b
+D system.ads		20180524051735 085b6ffb system%s
+D s-bytswa.ads		20180524051735 799c7440 system.byte_swapping%s
+D s-conca4.ads		20180524051736 7e642b20 system.concat_4%s
+D s-crtl.ads		20180524051734 0ebbdb71 system.crtl%s
+D s-direio.ads		20180524051734 7c86ede3 system.direct_io%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051736 078245e4 system.file_control_block%s
+D s-fileio.ads		20180524051734 45ce2f0f system.file_io%s
+D s-imgint.ads		20180524051734 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20180524051734 c7a851e2 system.img_real%s
+D s-parame.ads		20180524051736 48ec542b system.parameters%s
+D s-rannum.ads		20180524051735 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20180524051736 20bbe636 system.secondary_stack%s
+D s-sequio.ads		20180524051735 fc7560a7 system.sequential_io%s
+D s-soflin.ads		20180524051735 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051736 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051736 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051734 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 17|1r6 1r19 1r46 1r65 2r5 2r18
+X 2 a-direio.ads
+43k13*Direct_IO 193e18 17|1w69
+X 6 a-numeri.ads
+16K13*Numerics 32e17 17|1r23 2r22
+X 7 a-nuflra.ads
+41K22*Float_Random 74e30 17|1w32 2r31
+47R9*Generator<29|63R9> 17|7r29
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<29|71p13> 17|12s15
+53U14*Reset<29|100p14> 17|9s7
+X 8 a-sequio.ads
+43k13*Sequential_IO 160e22 17|1w50
+X 12 a-textio.ads
+49K13*Text_IO 471e16 17|1w10 2r9
+52P9*File_Type 17|44r15
+53n32*Out_File{53E9} 17|46r22
+86U14*Create 17|46s7
+98U14*Close 17|50s7
+259U14*Put_Line 17|48s10
+263U14*Put_Line 17|20s10
+X 16 lab2.ads
+1K9*lab2 12l5 12e9 17|4b14 53l5 53t9
+3A9*Wektor(float)<integer> 5r29 7r36 8r29 9r33 10r29 17|6r36 16r29 24r29
+. 29r33 43r29
+5V13*Sprawdz{boolean} 5>21 17|24b13 27l8 27t15
+5a21 A{3A9} 17|24b21 26r28 26r38 26r51 26r59
+7U14*Zapelnij 7=23 17|6b14 14l8 14t16
+7a23 Tab{3A9} 17|6b23 11m16 11r16
+8U14*Wypisz 8>21 17|16b14 22l8 22t14
+8a21 Tab{3A9} 17|16b21 19r17 20r43
+9U14*Sortuj 9=21 17|29b14 41l8 41t14
+9a21 Tab{3A9} 17|29b21 32r16 32r28 33r26 34r16 34r25 35r24 36m16 36r26 37m16
+10U14*Zapisz 10>21 17|43b14 51l8 51t14
+10a21 Tab{3A9} 17|43b21 47r16 48r26
+X 17 lab2.adb
+7r7 Gen{7|47R9} 9r13 12r22
+11f11 E=11:16{float} 12r10
+19i12 I{integer} 20r28 20r47
+26i23 I{integer} 26r53 26r61
+30f7 Temp{float} 35m16 37r26
+32i11 I{integer} 33r20 34r29 35r28 36r20
+33i14 J{integer} 34r20 36r30 37r20
+44p7 FTLog{12|52P9} 46m15 46r15 48r19 50m14 50r14
+47i11 I{integer} 48r30
+

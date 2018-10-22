@@ -1,0 +1,18 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/Users/gtluszcz/Documents/GT/programowanie/pwir/lab2/lab2.gpr
+20181022155335
+[BOUND OBJECT FILES]
+/Users/gtluszcz/Documents/GT/programowanie/pwir/lab2/obj/lab2.o
+/Users/gtluszcz/Documents/GT/programowanie/pwir/lab2/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/Users/gtluszcz/Documents/GT/programowanie/pwir/lab2/obj/
+-L/Users/gtluszcz/Documents/GT/programowanie/pwir/lab2/obj/
+-L/users/gtluszcz/opt/gnat/2018/lib/gcc/x86_64-apple-darwin16.7.0/7.3.1/adalib/
+-static
+/users/gtluszcz/opt/gnat/2018/lib/gcc/x86_64-apple-darwin16.7.0/7.3.1/adalib/libgnat.a
