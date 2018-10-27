@@ -42,22 +42,37 @@ begin
     end if;
 end Print;
 
-
--- TODO Make Up pointer useful
-Procedure Wstaw(Tree: in out Elem_Ptr; N: Integer) is
+Procedure Insert(Tree: in out Elem_Ptr; N: Integer) is
     Elem: Elem_Ptr := new Element;
+    P: Elem_Ptr := Null;
+    L: Elem_Ptr := Tree;
+    IsLeft: Boolean;
 begin
     Elem.Data := N;
     If Tree = Null then
+        Elem.Up := P;
         Tree := Elem;
     else
-        if Elem.Data < Tree.Data then
-            Wstaw(Tree.Left, N);
+        while L /= Null loop
+            P := L;
+            if N < L.Data then
+                L := L.Left;
+                IsLeft := True;
+            else
+                L := L.Right;
+                IsLeft := False;
+            end if;   
+        end loop;
+
+        if IsLeft then
+            P.Left := Elem;
         else
-            Wstaw(Tree.Right, N);
-        end if;   
+            P.Right := Elem;
+        end if;
+
+        Elem.Up := P;
     end if;
-end Wstaw;
+end Insert;
 
 Function Search(Tree: in out Elem_Ptr; N: in Integer) return Boolean is
 begin
@@ -89,12 +104,13 @@ begin
 end Serialize;
 
 Tree: Elem_Ptr := Null;
+
 begin
-    Wstaw(Tree, 5);
-    Wstaw(Tree, 3);
-    Wstaw(Tree, 6);
-    Wstaw(Tree, 5);
-    Wstaw(Tree, 2);
+    Insert(Tree, 5);
+    Insert(Tree, 3);
+    Insert(Tree, 6);
+    Insert(Tree, 5);
+    Insert(Tree, 2);
     Print(Tree);
     Put_Line(Search(Tree, 7)'Img);
     Serialize(Tree);
