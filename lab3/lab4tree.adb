@@ -232,6 +232,11 @@ begin
     Insert(Tree, 30);
     Insert(Tree, 20);
     Insert(Tree, 10);
+    Insert(Tree, 9);
+    Insert(Tree, 8);
+    Insert(Tree, 7);
+
+
 
     Print(Tree);
     Put_Line("After");
